@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { themes } from '~/styles/themes'
+import Colors from "~/styles/themes"
 
 type ButtonProps = {
     children: ReactNode
@@ -8,7 +8,7 @@ type ButtonProps = {
 }
 
 export default function Button({ children, title, onClick }: ButtonProps) {
-    const theme = themes.gastly
+    const theme = Colors.gastly
 
     return (
         <button

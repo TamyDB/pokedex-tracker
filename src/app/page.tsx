@@ -1,31 +1,14 @@
-import Link from 'next/link'
-import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
-import { House } from 'lucide-react'
+import Header from '~/components/header'
 import List from '~/components/list'
-import ChoosePokedex from '~/components/ui/modal'
-import Color from "~/styles/themes"
+import ChoosePokedex from '~/components/modal'
+import Aside from "~/components/aside"
 
 export default function HomePage() {
   return (
     <div className="flex h-screen">
-      <aside className="flex w-20 flex-col items-center gap-4 bg-gray-800 py-4 text-white">
-        <SignedIn>
-          <UserButton />
-        </SignedIn>
-        <SignedOut>
-          <SignInButton />
-        </SignedOut>
-        <Link href="/">
-          <House />
-        </Link>
-      </aside>
+      <Aside />
       <main className="container mx-auto p-4">
-        <div className="flex flex-col items-center p-4">
-          <div className="h-32 w-32 rounded-full bg-black p-4 text-white">
-            Profile Picture
-          </div>
-          <h1 className="text-3xl font-bold">Teste</h1>
-        </div>
+        <Header />
         <div className="flex items-center justify-between py-4">
           <div>
             <p className="text-3xl font-bold">List</p>

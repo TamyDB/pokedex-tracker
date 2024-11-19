@@ -3,7 +3,8 @@ const colors = {
     primary: '#8B6283',
     secondary: '#392939',
     background: '#D5ACCD',
-    text: '#000'
+    text: '#000',
+    white: '#FFFF'
   },
   porygon: {
     primary: '#FF6262',

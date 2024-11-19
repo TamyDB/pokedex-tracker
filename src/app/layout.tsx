@@ -24,7 +24,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <ClerkProvider>
-      <html lang="en" className={`${raleway.className}`}>
+      <html lang="pt-BR" className={`${raleway.className}`}>
         <body style={{ background: colors.gastly.background }}>{children}</body>
       </html>
     </ClerkProvider>

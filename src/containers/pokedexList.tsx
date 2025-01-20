@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { db } from "~/server/db";
-import ChoosePokedex from "./modal";
 import colors from "~/styles/themes"
 
 export default async function List() {
@@ -16,7 +15,6 @@ export default async function List() {
             Choose the pokedex region you want to check
           </p>
         </div>
-        <ChoosePokedex />
 
       </div>
       <ul className="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1">

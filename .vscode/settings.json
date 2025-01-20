@@ -2,5 +2,8 @@
     "editor.FormatOnSave": false,
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "never"
+    },
+    "files.associations": {
+      "*.css": "tailwindcss"
     }
   }

@@ -1,5 +1,4 @@
 import "~/styles/globals.css";
-import colors from "~/styles/themes"
 
 import { Raleway } from "next/font/google";
 import { type Metadata } from "next";
@@ -25,7 +24,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="pt-BR" className={`${raleway.className}`}>
-        <body style={{ background: colors.gastly.background }}>{children}</body>
+        <body>{children}</body>
       </html>
     </ClerkProvider>
   );
